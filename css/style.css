@@ -1,0 +1,356 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.project {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  width: 75vw;
+  margin: auto;
+}
+
+.calc-int {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  padding-bottom: 36px;
+}
+
+.calc-show-result {
+  letter-spacing: 0em;
+  text-align: left;
+  height: 30px;
+}
+
+.calc-title {
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 49px;
+}
+
+.calc-number {
+  flex-direction: row;
+  color: #7e7e7e;
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 20px;
+  background: #d7d7d7;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.calc-4op {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 30px;
+  width: 30px;
+}
+
+.line {
+  display: block;
+  margin: auto;
+}
+
+.op-btn {
+  color: #fff;
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-flex;
+  padding: 5px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------- */
+
+.main-time {
+  display: block;
+  margin: auto;
+}
+
+.time-title {
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 36px;
+}
+
+.time-frame {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.time-input {
+  display: flex;
+  /* padding: 10px, 45px, 10px, 10px; */
+  border-radius: 20px;
+  gap: 10px;
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: #d7d7d7;
+  box-shadow: 3px 3px 0px 0px #00000040;
+  color: #7e7e7e;
+  position: relative;
+  width: 150px;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+.time-info {
+  position: relative;
+}
+.time-aktiv-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 51px;
+  align-items: center;
+  padding-bottom: 53px;
+}
+
+.time-time {
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+/* ---------dino------- */
+.dino-title {
+  padding-top: 36px;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.dino-int {
+  display: block;
+}
+.dino-img {
+  display: block;
+  margin: auto;
+}
+/* ---- */
+
+.threeNumber-title {
+  color: black;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.threeNumber-int {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+}
+
+.threeNumber {
+  border-radius: 20px;
+  background: #d7d7d7;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  color: #7e7e7e;
+  padding: 10px 20px;
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  text-align: flex-start;
+}
+
+.threeNumber-text {
+  color: #000;
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.students-title {
+  color: black;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.main-students {
+  text-align: center; /* Center-align the content */
+}
+
+.students-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 59px;
+  padding: 59px;
+}
+
+.students-infos {
+  padding-bottom: 36px;
+}
+
+.s-block-info {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background: #d9d9d9;
+  text-align: left;
+  display: none;
+
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  text-align: center;
+}
+
+.s-info {
+  padding: 10px, 20px, 10px, 20px;
+  border-radius: 20px;
+  gap: 10px;
+  box-shadow: 3px 3px 0px 0px #00000040;
+  background: #000000;
+  color: white;
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.futur-img {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.main-futur {
+  display: flex;
+  justify-content: center;
+}
+
+.futur-int {
+  display: inline-flex;
+  gap: 186px;
+}
+
+.futur-middle {
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+  padding-top: 61px;
+  padding-bottom: 59px;
+}
+
+.futur-end {
+  padding-top: 97px;
+}
+
+.futur-sign-info {
+  display: inline-flex;
+  padding: 10px 80px 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #d7d7d7;
+  color: #7e7e7e;
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.futur-sign-in {
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  color: #fff;
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 20px;
+  background: #000;
+}
+
+.futur-info {
+  color: #000;
+  font-family: Montserrat Alternates;
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.sign-in {
+  display: inline-flex;
+  gap: 36px;
+}
+
+.modal {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+  display: none;
+  width: 463px;
+  height: 245px;
+}
+
+/* .modal-content {
+} */

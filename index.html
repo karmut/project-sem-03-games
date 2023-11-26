@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Comfortaa&family=Gluten:wght@300&family=Inter&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="project">
+      <div class="main-calc main">
+        <h1 class="calc-title title">Калькулятор</h1>
+        <!-- <div class="calc-container container"> -->
+        <div class="calc-int container">
+          <input
+            type="text"
+            class="calc-n1 calc-number"
+            id="num1"
+            placeholder="Введіть число"
+          />
+          <div class="calc-4op">
+            <button class="calc-btn-plus op-btn" id="btnPlus">+</button>
+            <button class="calc-btn-minus op-btn" id="btnMinus">-</button>
+            <button class="calc-btn-mal op-btn" id="btnMal">*</button>
+            <button class="calc-btn-durch op-btn" id="btnDiv">/</button>
+          </div>
+          <input
+            type="text"
+            class="calc-n2 calc-number"
+            id="num2"
+            placeholder="Введіть число"
+          />
+          <button class="calc-show-result op-btn" id="show-result">=</button>
+          <!-- <input
+            type="text"
+            class="calc-number"
+            id="result"
+            placeholder="Результат"
+          /> -->
+          <span
+            class="calc-number"
+            id="calc-result"
+            placeholder="Результат"
+          ></span>
+        </div>
+        <!-- </div> -->
+        <img src="./icons/line2.png" alt="" class="line" />
+      </div>
+      <!-- OHNE JS -->
+      <div class="main-time main">
+        <h1 class="time-title title">Калькулятор часу</h1>
+        <div class="time-container container">
+          <div class="time-aktiv-section">
+            <div class="time-info">
+              <input
+                type="text"
+                class="time-input"
+                placeholder="Введіть число "
+              />
+              <img src="./icons/Frame.png" alt="line" class="time-frame" />
+            </div>
+            <p class="time-dots">
+              <img src="./icons/dots.png" alt="" class="dots" />
+            </p>
+            <p class="time-time">3 дн. 15:45:01</p>
+          </div>
+        </div>
+        <img src="./icons/line.png" alt="" class="line" />
+      </div>
+
+      <div class="main-dino main">
+        <h1 class="dino-title title">Google динозавр</h1>
+        <div class="dino-container container">
+          <div class="dino-int">
+            <img src="./img/Google dino.png" alt="" class="dino-img" />
+          </div>
+        </div>
+        <img src="./icons/line3.png" alt="" class="line" />
+      </div>
+
+      <div class="main-3n main">
+        <h1 class="threeNumber-title">Введіть 3 числа</h1>
+        <div class="threeNumber-int container">
+          <input
+            type="text"
+            class="threeNumber n1"
+            placeholder="Введіть число"
+          />
+          <input
+            type="text"
+            class="threeNumber n2"
+            placeholder="Введіть число"
+          />
+          <input
+            type="text"
+            class="threeNumber n3"
+            placeholder="Введіть число"
+          />
+        </div>
+        <p class="threeNumber-text"></p>
+        <img src="./icons/line3.png" alt="" class="line" />
+      </div>
+
+      <div class="main-students main">
+        <h1 class="students-title">Обери вченого/их</h1>
+        <div class="students-info">
+          <div class="s-block-info" id="s1"></div>
+          <div class="s-block-info" id="s2"></div>
+          <div class="s-block-info" id="s3"></div>
+          <div class="s-block-info" id="s4"></div>
+          <div class="s-block-info" id="s5"></div>
+          <div class="s-block-info" id="s6"></div>
+          <div class="s-block-info" id="s7"></div>
+          <div class="s-block-info" id="s8"></div>
+          <div class="s-block-info" id="s9"></div>
+          <div class="s-block-info" id="s10"></div>
+          <div class="s-block-info" id="s11"></div>
+          <div class="s-block-info" id="s12"></div>
+        </div>
+        <div class="students-infos">
+          <button class="s-info" id="btn19th">
+            Які вчені народилися в 19 ст.
+          </button>
+          <button class="s-info" id="btnAbc">
+            Відсортувати вчених за алфавітом
+          </button>
+          <button class="s-info" id="btnAge">
+            Відсортувати вчених за кількістю прожитих років
+            <!-- Death year or Age of Death should be added to students -->
+          </button>
+          <button class="s-info" id="btnOldestStudent">
+            Знайти вченого, який народився найпізніше
+            <!-- max birthYear -->
+          </button>
+          <button class="s-info" id="btnShareFirstLetters">
+            Знайти вчених, в яких співпадають перші літери імені і прізвища
+          </button>
+          <button class="s-info" id="btnEinstein">
+            Знайти рік народження Albert Einshtein
+          </button>
+          <!-- що має буди виведено -->
+          <button class="s-info" id="btnFirstLetterC">
+            Знайти вчених, прізвища яких починаються на на літеру “С”
+          </button>
+          <button class="s-info" id="btnFirstLetterA">
+            Видалити всіх вчених, ім’я яких починається на “А”
+            <!-- не зрозуміло, можу показати всіх які не починаються на А -->
+          </button>
+          <button class="s-info" id="btnYoungestAndOldest">
+            Знайти вченого, який прожив найдовше і вченого, який прожив найменше
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-futur main">
+      <div class="futur-int">
+        <div class="futur-start">
+          <img src="./img/futur-img.png" alt="img" class="futur-img" />
+        </div>
+        <div class="futur-middle">
+          <p class="futur-tele">Тел: +38 (123) 456 78 90</p>
+          <p class="futur-email">E-Mail: codingmagic@gmail.com</p>
+          <p class="futur-facebook">Facebook: CodingMagic</p>
+          <p class="futut-twitter">Twitter: CodingMagic</p>
+          <p class="futur-insta">Instagram: CodingMagic</p>
+        </div>
+        <div class="futur-end">
+          <div class="sign-in">
+            <input
+              type="text"
+              class="futur-sign-info"
+              placeholder="Ваша ел. адреса..."
+            />
+            <button class="futur-sign-in" id="logInBtn">Підписатись</button>
+          </div>
+          <p class="futur-info">
+            *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+            сайті
+          </p>
+          <div id="myModal" class="modal">
+            <span class="close" id="closeBtn">&times;</span>
+            <h2>Дякую за підписку!</h2>
+            <img src="./icons/game.png" alt="game" class="modal-icon" />
+            <img src="./icons/puzzle.png" alt="puzzle" class="modal-icon" />
+            <img src="./icons/sword.png" alt="sword" class="modal-icon" />
+            <img
+              src="./icons/tic-tac-toe.png"
+              alt="tic-tac-toe"
+              class="modal-icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/filters.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/students.js"></script>
+  </body>
+</html>
